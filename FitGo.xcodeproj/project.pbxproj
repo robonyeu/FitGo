@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E6447CE1D84286900A41873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447CD1D84286900A41873 /* AppDelegate.swift */; };
+		4E6447D01D84286900A41873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447CF1D84286900A41873 /* ViewController.swift */; };
+		4E6447D31D84286900A41873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6447D11D84286900A41873 /* Main.storyboard */; };
+		4E6447D51D84286900A41873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6447D41D84286900A41873 /* Assets.xcassets */; };
+		4E6447D81D84286900A41873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6447D61D84286900A41873 /* LaunchScreen.storyboard */; };
+		4E6447E31D84286900A41873 /* FitGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447E21D84286900A41873 /* FitGoTests.swift */; };
+		4E6447EE1D84286900A41873 /* FitGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447ED1D84286900A41873 /* FitGoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E6447DF1D84286900A41873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6447C21D84286900A41873 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E6447C91D84286900A41873;
+			remoteInfo = FitGo;
+		};
+		4E6447EA1D84286900A41873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6447C21D84286900A41873 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E6447C91D84286900A41873;
+			remoteInfo = FitGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E6447CA1D84286900A41873 /* FitGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6447CD1D84286900A41873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E6447CF1D84286900A41873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E6447D21D84286900A41873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E6447D41D84286900A41873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E6447D71D84286900A41873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E6447D91D84286900A41873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E6447DE1D84286900A41873 /* FitGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6447E21D84286900A41873 /* FitGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitGoTests.swift; sourceTree = "<group>"; };
+		4E6447E41D84286900A41873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E6447E91D84286900A41873 /* FitGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6447ED1D84286900A41873 /* FitGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitGoUITests.swift; sourceTree = "<group>"; };
+		4E6447EF1D84286900A41873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E6447C71D84286900A41873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6447DB1D84286900A41873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6447E61D84286900A41873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E6447C11D84286900A41873 = {
+			isa = PBXGroup;
+			children = (
+				4E6447CC1D84286900A41873 /* FitGo */,
+				4E6447E11D84286900A41873 /* FitGoTests */,
+				4E6447EC1D84286900A41873 /* FitGoUITests */,
+				4E6447CB1D84286900A41873 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E6447CB1D84286900A41873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E6447CA1D84286900A41873 /* FitGo.app */,
+				4E6447DE1D84286900A41873 /* FitGoTests.xctest */,
+				4E6447E91D84286900A41873 /* FitGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E6447CC1D84286900A41873 /* FitGo */ = {
+			isa = PBXGroup;
+			children = (
+				4E6447CD1D84286900A41873 /* AppDelegate.swift */,
+				4E6447CF1D84286900A41873 /* ViewController.swift */,
+				4E6447D11D84286900A41873 /* Main.storyboard */,
+				4E6447D41D84286900A41873 /* Assets.xcassets */,
+				4E6447D61D84286900A41873 /* LaunchScreen.storyboard */,
+				4E6447D91D84286900A41873 /* Info.plist */,
+			);
+			path = FitGo;
+			sourceTree = "<group>";
+		};
+		4E6447E11D84286900A41873 /* FitGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E6447E21D84286900A41873 /* FitGoTests.swift */,
+				4E6447E41D84286900A41873 /* Info.plist */,
+			);
+			path = FitGoTests;
+			sourceTree = "<group>";
+		};
+		4E6447EC1D84286900A41873 /* FitGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E6447ED1D84286900A41873 /* FitGoUITests.swift */,
+				4E6447EF1D84286900A41873 /* Info.plist */,
+			);
+			path = FitGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E6447C91D84286900A41873 /* FitGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E6447F21D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGo" */;
+			buildPhases = (
+				4E6447C61D84286900A41873 /* Sources */,
+				4E6447C71D84286900A41873 /* Frameworks */,
+				4E6447C81D84286900A41873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitGo;
+			productName = FitGo;
+			productReference = 4E6447CA1D84286900A41873 /* FitGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E6447DD1D84286900A41873 /* FitGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E6447F51D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGoTests" */;
+			buildPhases = (
+				4E6447DA1D84286900A41873 /* Sources */,
+				4E6447DB1D84286900A41873 /* Frameworks */,
+				4E6447DC1D84286900A41873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E6447E01D84286900A41873 /* PBXTargetDependency */,
+			);
+			name = FitGoTests;
+			productName = FitGoTests;
+			productReference = 4E6447DE1D84286900A41873 /* FitGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E6447E81D84286900A41873 /* FitGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E6447F81D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGoUITests" */;
+			buildPhases = (
+				4E6447E51D84286900A41873 /* Sources */,
+				4E6447E61D84286900A41873 /* Frameworks */,
+				4E6447E71D84286900A41873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E6447EB1D84286900A41873 /* PBXTargetDependency */,
+			);
+			name = FitGoUITests;
+			productName = FitGoUITests;
+			productReference = 4E6447E91D84286900A41873 /* FitGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E6447C21D84286900A41873 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JoanCardona;
+				TargetAttributes = {
+					4E6447C91D84286900A41873 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4E6447DD1D84286900A41873 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4E6447C91D84286900A41873;
+					};
+					4E6447E81D84286900A41873 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4E6447C91D84286900A41873;
+					};
+				};
+			};
+			buildConfigurationList = 4E6447C51D84286900A41873 /* Build configuration list for PBXProject "FitGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E6447C11D84286900A41873;
+			productRefGroup = 4E6447CB1D84286900A41873 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E6447C91D84286900A41873 /* FitGo */,
+				4E6447DD1D84286900A41873 /* FitGoTests */,
+				4E6447E81D84286900A41873 /* FitGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E6447C81D84286900A41873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E6447D81D84286900A41873 /* LaunchScreen.storyboard in Resources */,
+				4E6447D51D84286900A41873 /* Assets.xcassets in Resources */,
+				4E6447D31D84286900A41873 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6447DC1D84286900A41873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6447E71D84286900A41873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E6447C61D84286900A41873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E6447D01D84286900A41873 /* ViewController.swift in Sources */,
+				4E6447CE1D84286900A41873 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6447DA1D84286900A41873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E6447E31D84286900A41873 /* FitGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6447E51D84286900A41873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E6447EE1D84286900A41873 /* FitGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E6447E01D84286900A41873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E6447C91D84286900A41873 /* FitGo */;
+			targetProxy = 4E6447DF1D84286900A41873 /* PBXContainerItemProxy */;
+		};
+		4E6447EB1D84286900A41873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E6447C91D84286900A41873 /* FitGo */;
+			targetProxy = 4E6447EA1D84286900A41873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E6447D11D84286900A41873 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E6447D21D84286900A41873 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E6447D61D84286900A41873 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E6447D71D84286900A41873 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E6447F01D84286900A41873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E6447F11D84286900A41873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E6447F31D84286900A41873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E6447F41D84286900A41873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4E6447F61D84286900A41873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FitGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitGo.app/FitGo";
+			};
+			name = Debug;
+		};
+		4E6447F71D84286900A41873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FitGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitGo.app/FitGo";
+			};
+			name = Release;
+		};
+		4E6447F91D84286900A41873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FitGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitGo;
+			};
+			name = Debug;
+		};
+		4E6447FA1D84286900A41873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FitGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E6447C51D84286900A41873 /* Build configuration list for PBXProject "FitGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6447F01D84286900A41873 /* Debug */,
+				4E6447F11D84286900A41873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E6447F21D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6447F31D84286900A41873 /* Debug */,
+				4E6447F41D84286900A41873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E6447F51D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6447F61D84286900A41873 /* Debug */,
+				4E6447F71D84286900A41873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E6447F81D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6447F91D84286900A41873 /* Debug */,
+				4E6447FA1D84286900A41873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E6447C21D84286900A41873 /* Project object */;
+}

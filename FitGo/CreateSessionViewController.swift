@@ -10,8 +10,13 @@ import UIKit
 
 class CreateSessionViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let mainScreenSize: CGSize = UIScreen.main.bounds.size
+        let scrollableSize: CGSize = scrollView.contentSize
+        scrollView.contentSize = CGSize(width: mainScreenSize.width, height: scrollableSize.height)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,10 +26,9 @@ class CreateSessionViewController: UIViewController {
 
     @IBAction func confirmTapped(_ sender: AnyObject) {
         
-        var bookingsVC : BookingsViewController = self.navigationController?.viewControllers.first as! BookingsViewController
-
+        let bookingsVC : BookingsViewController = self.navigationController?.viewControllers.first as! BookingsViewController
         bookingsVC.createSessionWithStatus(status: "Pendent")
-        self.navigationController?.popToRootViewController(animated: true)
+        _ = self.navigationController?.popToRootViewController(animated: true)
     }
     
     

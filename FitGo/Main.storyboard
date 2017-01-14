@@ -381,9 +381,13 @@
                             <constraint firstItem="3M2-Wm-XDT" firstAttribute="top" secondItem="KS3-hn-adp" secondAttribute="bottom" id="h05-0z-OHv"/>
                             <constraint firstAttribute="trailing" secondItem="KS3-hn-adp" secondAttribute="trailing" id="hwK-Gf-S6Y"/>
                             <constraint firstAttribute="trailing" secondItem="3M2-Wm-XDT" secondAttribute="trailing" id="sef-zZ-SXY"/>
+                            <constraint firstItem="gNc-jc-5M5" firstAttribute="width" secondItem="8OQ-cD-C7c" secondAttribute="width" constant="-20" id="t9J-Tk-9Ke"/>
                             <constraint firstItem="KS3-hn-adp" firstAttribute="leading" secondItem="8OQ-cD-C7c" secondAttribute="leading" id="urt-cU-8bA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="KS3-hn-adp" id="RIc-Q1-iBC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHY-zh-hL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

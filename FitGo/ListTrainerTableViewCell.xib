@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="trainerCell" rowHeight="97" id="KGk-i7-Jjw" customClass="ListTrainerTableViewCell" customModule="FitGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9KS-Kp-i10">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="58h-BF-UUd"/>
+                            <constraint firstAttribute="height" constant="50" id="nZO-5y-Zeq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin Velázquez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYJ-ZP-d3E">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a really good personal trainer with more than 10 years of experience. I am certificated with XX and YY programmes. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB7-iI-RKI">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boxing and Gain Muscle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKE-UI-65O">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.95686274510000002" green="0.57647058819999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9KS-Kp-i10" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8XU-hi-h8f"/>
+                    <constraint firstAttribute="bottom" secondItem="oKE-UI-65O" secondAttribute="bottom" constant="5" id="LhU-Yv-AzM"/>
+                    <constraint firstItem="9KS-Kp-i10" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MLF-Cf-T5n"/>
+                    <constraint firstAttribute="trailing" secondItem="oKE-UI-65O" secondAttribute="trailing" constant="10" id="P7X-wF-J6d"/>
+                    <constraint firstItem="aB7-iI-RKI" firstAttribute="leading" secondItem="9KS-Kp-i10" secondAttribute="trailing" constant="10" id="WfR-TE-ong"/>
+                    <constraint firstItem="aB7-iI-RKI" firstAttribute="top" secondItem="EYJ-ZP-d3E" secondAttribute="bottom" constant="10" id="Wj4-cf-Pad"/>
+                    <constraint firstAttribute="trailing" secondItem="aB7-iI-RKI" secondAttribute="trailing" constant="10" id="Z3p-c8-n1L"/>
+                    <constraint firstItem="EYJ-ZP-d3E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gaB-bE-iht"/>
+                    <constraint firstItem="EYJ-ZP-d3E" firstAttribute="leading" secondItem="9KS-Kp-i10" secondAttribute="trailing" constant="10" id="pF5-gp-O1L"/>
+                    <constraint firstItem="oKE-UI-65O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rfM-dr-Iwy"/>
+                    <constraint firstAttribute="trailing" secondItem="EYJ-ZP-d3E" secondAttribute="trailing" constant="10" id="u2s-mc-WBk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="34" y="80.5"/>
+        </tableViewCell>
+    </objects>
+</document>

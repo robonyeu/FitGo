@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="bookingCell" rowHeight="69" id="KGk-i7-Jjw" customClass="BookingTableViewCell" customModule="FitGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="287" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U1m-Kn-kod">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="M9H-dV-ZGv"/>
+                            <constraint firstAttribute="height" constant="40" id="dfb-x9-ajk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="15:00h 14/12/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSF-sR-NuK">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="112.5" id="a0w-ao-FOZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.63839577879581144" green="0.63839577879581144" blue="0.63839577879581144" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRK-tb-P24">
+                        <frame key="frameInset" minX="60" minY="37" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKF-1h-Q1u">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hSF-sR-NuK" secondAttribute="trailing" id="5Sp-oQ-Aqy"/>
+                    <constraint firstItem="JRK-tb-P24" firstAttribute="top" secondItem="eKF-1h-Q1u" secondAttribute="bottom" constant="5" id="6bp-Hd-MIg"/>
+                    <constraint firstAttribute="bottom" secondItem="JRK-tb-P24" secondAttribute="bottom" constant="10" id="94k-pe-DmL"/>
+                    <constraint firstItem="hSF-sR-NuK" firstAttribute="top" secondItem="eKF-1h-Q1u" secondAttribute="bottom" constant="5" id="B58-cf-kad"/>
+                    <constraint firstItem="hSF-sR-NuK" firstAttribute="leading" secondItem="JRK-tb-P24" secondAttribute="trailing" constant="10" id="D5R-bt-Oc8"/>
+                    <constraint firstItem="JRK-tb-P24" firstAttribute="leading" secondItem="U1m-Kn-kod" secondAttribute="trailing" constant="10" id="PMm-2S-d3z"/>
+                    <constraint firstAttribute="bottom" secondItem="hSF-sR-NuK" secondAttribute="bottom" constant="10" id="QMx-oK-c3u"/>
+                    <constraint firstAttribute="trailing" secondItem="eKF-1h-Q1u" secondAttribute="trailing" id="Rbp-Sg-SEh"/>
+                    <constraint firstItem="eKF-1h-Q1u" firstAttribute="top" secondItem="U1m-Kn-kod" secondAttribute="top" id="XoV-7s-wAU"/>
+                    <constraint firstItem="U1m-Kn-kod" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="paY-9I-qg5"/>
+                    <constraint firstItem="eKF-1h-Q1u" firstAttribute="leading" secondItem="U1m-Kn-kod" secondAttribute="trailing" constant="10" id="wfZ-V0-EMt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="U1m-Kn-kod" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="XXB-wx-Y9s"/>
+            </constraints>
+            <connections>
+                <outlet property="classDate" destination="hSF-sR-NuK" id="jUR-Ti-MsH"/>
+                <outlet property="statusLabel" destination="JRK-tb-P24" id="31O-tM-Fg5"/>
+                <outlet property="trainerImageView" destination="U1m-Kn-kod" id="4fJ-Nw-afu"/>
+                <outlet property="trainerName" destination="eKF-1h-Q1u" id="TVD-ju-kam"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="66.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E112D351DEC9B9D002EB291 /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D341DEC9B9D002EB291 /* BookingsViewController.swift */; };
+		4E112D391DEC9E8E002EB291 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D371DEC9E8E002EB291 /* BookingTableViewCell.swift */; };
+		4E112D3A1DEC9E8E002EB291 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E112D381DEC9E8E002EB291 /* BookingTableViewCell.xib */; };
+		4E112D3D1DECADFA002EB291 /* fit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E112D3C1DECADFA002EB291 /* fit.png */; };
+		4E112D3F1DECB1FF002EB291 /* CreateSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D3E1DECB1FF002EB291 /* CreateSessionViewModel.swift */; };
+		4E112D421DECB263002EB291 /* SkillsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D401DECB263002EB291 /* SkillsCollectionViewCell.swift */; };
+		4E112D431DECB263002EB291 /* SkillsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E112D411DECB263002EB291 /* SkillsCollectionViewCell.xib */; };
+		4E112D451DECB5FD002EB291 /* ListTrainersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D441DECB5FD002EB291 /* ListTrainersViewController.swift */; };
+		4E112D481DECB697002EB291 /* ListTrainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D461DECB697002EB291 /* ListTrainerTableViewCell.swift */; };
+		4E112D491DECB697002EB291 /* ListTrainerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E112D471DECB697002EB291 /* ListTrainerTableViewCell.xib */; };
+		4E2D03611D945F3100BE065E /* CreateSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D03601D945F3100BE065E /* CreateSessionViewController.swift */; };
+		4E5790A71DEC9326008FB34E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5790A61DEC9326008FB34E /* User.swift */; };
+		4E5790A91DEC96EC008FB34E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5790A81DEC96EC008FB34E /* LoginViewController.swift */; };
 		4E6447CE1D84286900A41873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447CD1D84286900A41873 /* AppDelegate.swift */; };
 		4E6447D01D84286900A41873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447CF1D84286900A41873 /* ViewController.swift */; };
-		4E6447D31D84286900A41873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6447D11D84286900A41873 /* Main.storyboard */; };
 		4E6447D51D84286900A41873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6447D41D84286900A41873 /* Assets.xcassets */; };
 		4E6447D81D84286900A41873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6447D61D84286900A41873 /* LaunchScreen.storyboard */; };
 		4E6447E31D84286900A41873 /* FitGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447E21D84286900A41873 /* FitGoTests.swift */; };
 		4E6447EE1D84286900A41873 /* FitGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447ED1D84286900A41873 /* FitGoUITests.swift */; };
+		4E6448001D8428BD00A41873 /* ChooseCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447FF1D8428BD00A41873 /* ChooseCityViewController.swift */; };
+		4E6448021D84290D00A41873 /* ChooseCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6448011D84290D00A41873 /* ChooseCityTests.swift */; };
+		4E6448041D842AE900A41873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6448031D842AE900A41873 /* Main.storyboard */; };
+		4E6448061D842C5D00A41873 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6448051D842C5D00A41873 /* Cities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E112D341DEC9B9D002EB291 /* BookingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
+		4E112D371DEC9E8E002EB291 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		4E112D381DEC9E8E002EB291 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		4E112D3C1DECADFA002EB291 /* fit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fit.png; sourceTree = "<group>"; };
+		4E112D3E1DECB1FF002EB291 /* CreateSessionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSessionViewModel.swift; sourceTree = "<group>"; };
+		4E112D401DECB263002EB291 /* SkillsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E112D411DECB263002EB291 /* SkillsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsCollectionViewCell.xib; sourceTree = "<group>"; };
+		4E112D441DECB5FD002EB291 /* ListTrainersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTrainersViewController.swift; sourceTree = "<group>"; };
+		4E112D461DECB697002EB291 /* ListTrainerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTrainerTableViewCell.swift; sourceTree = "<group>"; };
+		4E112D471DECB697002EB291 /* ListTrainerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTrainerTableViewCell.xib; sourceTree = "<group>"; };
+		4E2D03601D945F3100BE065E /* CreateSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSessionViewController.swift; sourceTree = "<group>"; };
+		4E5790A61DEC9326008FB34E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4E5790A81DEC96EC008FB34E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E6447CA1D84286900A41873 /* FitGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6447CD1D84286900A41873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E6447CF1D84286900A41873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4E6447D21D84286900A41873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E6447D41D84286900A41873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E6447D71D84286900A41873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E6447D91D84286900A41873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +75,10 @@
 		4E6447E91D84286900A41873 /* FitGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6447ED1D84286900A41873 /* FitGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitGoUITests.swift; sourceTree = "<group>"; };
 		4E6447EF1D84286900A41873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E6447FF1D8428BD00A41873 /* ChooseCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCityViewController.swift; sourceTree = "<group>"; };
+		4E6448011D84290D00A41873 /* ChooseCityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCityTests.swift; sourceTree = "<group>"; };
+		4E6448031D842AE900A41873 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4E6448051D842C5D00A41873 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +106,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E112D361DEC9E79002EB291 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E112D371DEC9E8E002EB291 /* BookingTableViewCell.swift */,
+				4E112D381DEC9E8E002EB291 /* BookingTableViewCell.xib */,
+				4E112D401DECB263002EB291 /* SkillsCollectionViewCell.swift */,
+				4E112D411DECB263002EB291 /* SkillsCollectionViewCell.xib */,
+				4E112D461DECB697002EB291 /* ListTrainerTableViewCell.swift */,
+				4E112D471DECB697002EB291 /* ListTrainerTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4E112D3B1DECADF0002EB291 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4E112D3C1DECADFA002EB291 /* fit.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		4E6447C11D84286900A41873 = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +150,13 @@
 		4E6447CC1D84286900A41873 /* FitGo */ = {
 			isa = PBXGroup;
 			children = (
+				4E112D3B1DECADF0002EB291 /* Images */,
+				4E112D361DEC9E79002EB291 /* Cells */,
+				4E6447FE1D84289E00A41873 /* Views */,
+				4E6447FD1D84289400A41873 /* ViewModals */,
+				4E6447FC1D84288F00A41873 /* Modals */,
+				4E6447FB1D84288600A41873 /* Classes */,
 				4E6447CD1D84286900A41873 /* AppDelegate.swift */,
-				4E6447CF1D84286900A41873 /* ViewController.swift */,
-				4E6447D11D84286900A41873 /* Main.storyboard */,
 				4E6447D41D84286900A41873 /* Assets.xcassets */,
 				4E6447D61D84286900A41873 /* LaunchScreen.storyboard */,
 				4E6447D91D84286900A41873 /* Info.plist */,
@@ -111,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				4E6447E21D84286900A41873 /* FitGoTests.swift */,
+				4E6448011D84290D00A41873 /* ChooseCityTests.swift */,
 				4E6447E41D84286900A41873 /* Info.plist */,
 			);
 			path = FitGoTests;
@@ -123,6 +181,44 @@
 				4E6447EF1D84286900A41873 /* Info.plist */,
 			);
 			path = FitGoUITests;
+			sourceTree = "<group>";
+		};
+		4E6447FB1D84288600A41873 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4E6447CF1D84286900A41873 /* ViewController.swift */,
+				4E6448051D842C5D00A41873 /* Cities.swift */,
+				4E6447FF1D8428BD00A41873 /* ChooseCityViewController.swift */,
+				4E2D03601D945F3100BE065E /* CreateSessionViewController.swift */,
+				4E5790A81DEC96EC008FB34E /* LoginViewController.swift */,
+				4E112D341DEC9B9D002EB291 /* BookingsViewController.swift */,
+				4E112D441DECB5FD002EB291 /* ListTrainersViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4E6447FC1D84288F00A41873 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				4E5790A61DEC9326008FB34E /* User.swift */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		4E6447FD1D84289400A41873 /* ViewModals */ = {
+			isa = PBXGroup;
+			children = (
+				4E112D3E1DECB1FF002EB291 /* CreateSessionViewModel.swift */,
+			);
+			name = ViewModals;
+			sourceTree = "<group>";
+		};
+		4E6447FE1D84289E00A41873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E6448031D842AE900A41873 /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +289,17 @@
 				TargetAttributes = {
 					4E6447C91D84286900A41873 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 57X3DP23YC;
+						LastSwiftMigration = 0800;
 					};
 					4E6447DD1D84286900A41873 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4E6447C91D84286900A41873;
 					};
 					4E6447E81D84286900A41873 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4E6447C91D84286900A41873;
 					};
 				};
@@ -229,9 +329,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6448041D842AE900A41873 /* Main.storyboard in Resources */,
+				4E112D3A1DEC9E8E002EB291 /* BookingTableViewCell.xib in Resources */,
+				4E112D431DECB263002EB291 /* SkillsCollectionViewCell.xib in Resources */,
+				4E112D3D1DECADFA002EB291 /* fit.png in Resources */,
 				4E6447D81D84286900A41873 /* LaunchScreen.storyboard in Resources */,
+				4E112D491DECB697002EB291 /* ListTrainerTableViewCell.xib in Resources */,
 				4E6447D51D84286900A41873 /* Assets.xcassets in Resources */,
-				4E6447D31D84286900A41873 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +360,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E112D451DECB5FD002EB291 /* ListTrainersViewController.swift in Sources */,
+				4E5790A91DEC96EC008FB34E /* LoginViewController.swift in Sources */,
+				4E6448061D842C5D00A41873 /* Cities.swift in Sources */,
+				4E112D351DEC9B9D002EB291 /* BookingsViewController.swift in Sources */,
+				4E112D421DECB263002EB291 /* SkillsCollectionViewCell.swift in Sources */,
+				4E6448001D8428BD00A41873 /* ChooseCityViewController.swift in Sources */,
+				4E5790A71DEC9326008FB34E /* User.swift in Sources */,
+				4E112D3F1DECB1FF002EB291 /* CreateSessionViewModel.swift in Sources */,
 				4E6447D01D84286900A41873 /* ViewController.swift in Sources */,
 				4E6447CE1D84286900A41873 /* AppDelegate.swift in Sources */,
+				4E2D03611D945F3100BE065E /* CreateSessionViewController.swift in Sources */,
+				4E112D391DEC9E8E002EB291 /* BookingTableViewCell.swift in Sources */,
+				4E112D481DECB697002EB291 /* ListTrainerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E6447E31D84286900A41873 /* FitGoTests.swift in Sources */,
+				4E6448021D84290D00A41873 /* ChooseCityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4E6447D11D84286900A41873 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E6447D21D84286900A41873 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E6447D61D84286900A41873 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,10 +507,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57X3DP23YC;
 				INFOPLIST_FILE = FitGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,10 +520,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57X3DP23YC;
 				INFOPLIST_FILE = FitGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitGo.app/FitGo";
 			};
 			name = Debug;
@@ -437,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitGo.app/FitGo";
 			};
 			name = Release;
@@ -448,6 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FitGo;
 			};
 			name = Debug;
@@ -459,6 +574,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joancardona.FitGoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FitGo;
 			};
 			name = Release;
@@ -482,6 +598,7 @@
 				4E6447F41D84286900A41873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E6447F51D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +607,7 @@
 				4E6447F71D84286900A41873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E6447F81D84286900A41873 /* Build configuration list for PBXNativeTarget "FitGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +616,7 @@
 				4E6447FA1D84286900A41873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

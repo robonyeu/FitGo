@@ -216,7 +216,7 @@
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-hn-adp">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What things interest you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="355" translatesAutoresizingMaskIntoConstraints="NO" id="Lwu-r2-dgC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What things interest you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="355" translatesAutoresizingMaskIntoConstraints="NO" id="Lwu-r2-dgC">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -247,13 +247,17 @@
                                             <outlet property="delegate" destination="fMk-cn-GEp" id="J3I-sE-H8I"/>
                                         </connections>
                                     </collectionView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much are you willing to pay?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiO-Kr-63w">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much are you willing to pay per hour?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiO-Kr-63w">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-3p-3s8"/>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often do you exercice per week?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqp-gj-1yC">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-3p-3s8">
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="fMk-cn-GEp" eventType="valueChanged" id="F9g-jO-c9z"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often do you exercice per week?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqp-gj-1yC">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -279,7 +283,7 @@
                                         </constraints>
                                         <state key="normal" title="4-5+"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to work out?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-x2-vEX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to work out?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-x2-vEX">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -305,7 +309,7 @@
                                         </constraints>
                                         <state key="normal" title="Don't mind"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you mind being trained with more people?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi1-y9-0ad">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you mind being trained with more people?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi1-y9-0ad">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -316,12 +320,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdy-Sh-k5b">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a date:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdy-Sh-k5b">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8K-02-qgd">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dd/MM HH:mm" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8K-02-qgd">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="wjK-ad-ufc"/>
                                         </constraints>
@@ -329,6 +333,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ‎£50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYq-Rb-mml">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="YMJ-3p-3s8" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="27Q-dy-Quh"/>
@@ -338,6 +347,7 @@
                                     <constraint firstAttribute="trailing" secondItem="yi1-y9-0ad" secondAttribute="trailing" constant="10" id="8lx-Ls-N0v"/>
                                     <constraint firstAttribute="trailing" secondItem="gNc-jc-5M5" secondAttribute="trailing" constant="10" id="91Y-vE-dnc"/>
                                     <constraint firstItem="gNc-jc-5M5" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="9T7-ro-3tu"/>
+                                    <constraint firstItem="mYq-Rb-mml" firstAttribute="top" secondItem="wiO-Kr-63w" secondAttribute="bottom" constant="15" id="9yN-CM-zPs"/>
                                     <constraint firstItem="Tqp-gj-1yC" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="Adm-rV-fBW"/>
                                     <constraint firstAttribute="trailing" secondItem="YMJ-3p-3s8" secondAttribute="trailing" constant="10" id="CDk-no-dgM"/>
                                     <constraint firstItem="V8K-02-qgd" firstAttribute="top" secondItem="Bdy-Sh-k5b" secondAttribute="bottom" constant="10" id="E0E-gu-7aO"/>
@@ -345,13 +355,14 @@
                                     <constraint firstItem="Bdy-Sh-k5b" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="Fjw-0T-sRY"/>
                                     <constraint firstItem="yi1-y9-0ad" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="GQ6-ew-o0h"/>
                                     <constraint firstAttribute="trailing" secondItem="Lwu-r2-dgC" secondAttribute="trailing" constant="10" id="I0k-ZC-Ggt"/>
+                                    <constraint firstItem="YMJ-3p-3s8" firstAttribute="top" secondItem="mYq-Rb-mml" secondAttribute="bottom" constant="15" id="KQj-tV-ccr"/>
                                     <constraint firstItem="3l2-Qm-lFr" firstAttribute="top" secondItem="Tqp-gj-1yC" secondAttribute="bottom" constant="10" id="Kfq-zG-yhs"/>
                                     <constraint firstItem="Bn7-ZG-VMf" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="M6v-se-r5t"/>
                                     <constraint firstItem="tg1-EE-uPi" firstAttribute="centerY" secondItem="5MK-ws-diu" secondAttribute="centerY" id="Mrw-NN-Jkb"/>
                                     <constraint firstItem="wiO-Kr-63w" firstAttribute="top" secondItem="gNc-jc-5M5" secondAttribute="bottom" constant="25" id="P8Y-xc-AsB"/>
                                     <constraint firstItem="V8K-02-qgd" firstAttribute="leading" secondItem="KS3-hn-adp" secondAttribute="leading" constant="10" id="QTt-G9-dFp"/>
                                     <constraint firstItem="h6y-5Z-sJH" firstAttribute="centerY" secondItem="Bn7-ZG-VMf" secondAttribute="centerY" id="SRc-gr-a7X"/>
-                                    <constraint firstItem="YMJ-3p-3s8" firstAttribute="top" secondItem="wiO-Kr-63w" secondAttribute="bottom" constant="10" id="T2q-nw-zIc"/>
+                                    <constraint firstItem="YMJ-3p-3s8" firstAttribute="top" secondItem="wiO-Kr-63w" secondAttribute="bottom" constant="60" id="T2q-nw-zIc"/>
                                     <constraint firstItem="Bdy-Sh-k5b" firstAttribute="top" secondItem="Bn7-ZG-VMf" secondAttribute="bottom" constant="25" id="TN4-hv-buH"/>
                                     <constraint firstAttribute="trailing" secondItem="Xc0-x2-vEX" secondAttribute="trailing" constant="10" id="Ujp-gj-KgU"/>
                                     <constraint firstItem="tg1-EE-uPi" firstAttribute="leading" secondItem="5MK-ws-diu" secondAttribute="trailing" constant="10" id="V1q-Rd-bov"/>
@@ -387,16 +398,19 @@
                             <constraint firstAttribute="trailing" secondItem="3M2-Wm-XDT" secondAttribute="trailing" id="sef-zZ-SXY"/>
                             <constraint firstItem="gNc-jc-5M5" firstAttribute="width" secondItem="8OQ-cD-C7c" secondAttribute="width" constant="-20" id="t9J-Tk-9Ke"/>
                             <constraint firstItem="KS3-hn-adp" firstAttribute="leading" secondItem="8OQ-cD-C7c" secondAttribute="leading" id="urt-cU-8bA"/>
+                            <constraint firstItem="mYq-Rb-mml" firstAttribute="centerX" secondItem="8OQ-cD-C7c" secondAttribute="centerX" id="vMV-yQ-8XX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="horizontalSlider" destination="YMJ-3p-3s8" id="kNO-Be-3Vt"/>
+                        <outlet property="pricePerHourLabel" destination="mYq-Rb-mml" id="zs0-UE-xpt"/>
                         <outlet property="scrollView" destination="KS3-hn-adp" id="RIc-Q1-iBC"/>
                         <outlet property="skillsCollectionView" destination="gNc-jc-5M5" id="Mei-WS-cac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHY-zh-hL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="143"/>
+            <point key="canvasLocation" x="1124" y="142.57871064467767"/>
         </scene>
         <!--List Trainers View Controller-->
         <scene sceneID="CvB-cm-dR9">
@@ -428,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUK-kh-6qP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010.4000000000001" y="-7.6461769115442282"/>
+            <point key="canvasLocation" x="2015" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ql-Ms-XdO">

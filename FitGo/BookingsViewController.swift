@@ -10,8 +10,8 @@ import UIKit
 
 class BookingsViewController: UIViewController, UITableViewDataSource {
 
-    var activeBookings : NSMutableArray? = []
-    typealias booking = (String, String)
+    var activeBookings: Array<Booking> = Array<Booking>()
+    //typealias booking = (String, String)
     
     @IBOutlet weak var bookingsTableView: UITableView!
     
@@ -37,7 +37,7 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
         
         // ask the server for active bookings
         
-        if activeBookings?.count != 0 {
+        if activeBookings.count != 0 {
             self.bookingsTableView.isHidden = false
             self.bookingsTableView.reloadData()
         }
@@ -50,8 +50,8 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if activeBookings?.count != 0 {
-            return self.activeBookings!.count
+        if activeBookings.count != 0 {
+            return self.activeBookings.count
         }
         return 0
     }
@@ -64,8 +64,10 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
             cell = BookingTableViewCell(style: .default, reuseIdentifier: "bookingCell")
         }
         
-        let abook = activeBookings?.object(at: indexPath.row)
+        let booking: Booking = activeBookings[indexPath.row]
         
+        cell?.statusLabel.text = booking.state
+        cell?.locationLabel.text = booking.location
         /*if abook as Dictionary {
             cell?.trainerName.text = abook[1]
         }*/
@@ -74,19 +76,17 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
     }
     
     
-    public func createSessionWithStatus(status: String){
+    public func createBooking(booking: Booking){
         
-       // let abooking : booking = ("Jose Machuca", status)
-        let booking = [1: "Jose Machuca", 2: status]
-        activeBookings?.add(booking)
-//)
+        activeBookings.append(booking)
+
         
-        if activeBookings?.count != 0 {
+        if activeBookings.count != 0 {
             self.bookingsTableView.isHidden = false
             self.bookingsTableView.reloadData()
         }
     }
-
+    
     /*
     // MARK: - Navigation
 

@@ -10,5 +10,13 @@ import UIKit
 
 class CreateSessionViewModel: NSObject {
 
-    let skills:  Array = ["Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit", "Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit"]
+    let skills:  Array = ["Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit", "Nutrition", "Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit"]
+    var skillsSelected: Array = Array<String>()
+    
+    func remove(object: String) {
+        if let index = skillsSelected.index(of: object){
+            skillsSelected.remove(at: index)
+        }
+    }
 }
+

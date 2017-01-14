@@ -18,6 +18,7 @@
 		4E112D481DECB697002EB291 /* ListTrainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E112D461DECB697002EB291 /* ListTrainerTableViewCell.swift */; };
 		4E112D491DECB697002EB291 /* ListTrainerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E112D471DECB697002EB291 /* ListTrainerTableViewCell.xib */; };
 		4E2D03611D945F3100BE065E /* CreateSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D03601D945F3100BE065E /* CreateSessionViewController.swift */; };
+		4E54F93D1E2A48B200B9C9B3 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E54F93C1E2A48B200B9C9B3 /* Booking.swift */; };
 		4E5790A71DEC9326008FB34E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5790A61DEC9326008FB34E /* User.swift */; };
 		4E5790A91DEC96EC008FB34E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5790A81DEC96EC008FB34E /* LoginViewController.swift */; };
 		4E6447CE1D84286900A41873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6447CD1D84286900A41873 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		4E112D461DECB697002EB291 /* ListTrainerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTrainerTableViewCell.swift; sourceTree = "<group>"; };
 		4E112D471DECB697002EB291 /* ListTrainerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTrainerTableViewCell.xib; sourceTree = "<group>"; };
 		4E2D03601D945F3100BE065E /* CreateSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSessionViewController.swift; sourceTree = "<group>"; };
+		4E54F93C1E2A48B200B9C9B3 /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		4E5790A61DEC9326008FB34E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4E5790A81DEC96EC008FB34E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E6447CA1D84286900A41873 /* FitGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				4E5790A61DEC9326008FB34E /* User.swift */,
+				4E54F93C1E2A48B200B9C9B3 /* Booking.swift */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				4E5790A71DEC9326008FB34E /* User.swift in Sources */,
 				4E112D3F1DECB1FF002EB291 /* CreateSessionViewModel.swift in Sources */,
 				4E6447D01D84286900A41873 /* ViewController.swift in Sources */,
+				4E54F93D1E2A48B200B9C9B3 /* Booking.swift in Sources */,
 				4E6447CE1D84286900A41873 /* AppDelegate.swift in Sources */,
 				4E2D03611D945F3100BE065E /* CreateSessionViewController.swift in Sources */,
 				4E112D391DEC9E8E002EB291 /* BookingTableViewCell.swift in Sources */,

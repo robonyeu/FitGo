@@ -8,10 +8,14 @@
 
 import UIKit
 
-class CreateSessionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class CreateSessionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
+    @IBOutlet weak var horizontalSlider: UISlider!
+    @IBOutlet weak var pricePerHourLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var skillsCollectionView: UICollectionView!
+    
+    var location: String = ""
     var sessionModel: CreateSessionViewModel = CreateSessionViewModel()
     
     override func viewDidLoad() {
@@ -27,32 +31,40 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         let size: CGSize = CGSize(width: 1, height: 1)
         
         if let flowLayout = skillsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout { flowLayout.estimatedItemSize = size }
-        
-        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
     @IBAction func confirmTapped(_ sender: AnyObject) {
         
-        let bookingsVC : BookingsViewController = self.navigationController?.viewControllers.first as! BookingsViewController
-        bookingsVC.createSessionWithStatus(status: "Pendent")
-        _ = self.navigationController?.popToRootViewController(animated: true)
+        if(sessionModel.skillsSelected.count == 0){
+            let alert: UIAlertController = UIAlertController(title: "Error", message: "Please select at least one skill you want to train", preferredStyle: .alert)
+            let cancel: UIAlertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alert.addAction(cancel)
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        else{
+            let value = Int(horizontalSlider.value)
+            
+            let booking: Booking = Booking(id: 1, pt_id: 2, user_id: 3, price: value, location: "London", skills: sessionModel.skillsSelected, state: "Pendent")
+            
+            let bookingsVC : BookingsViewController = self.navigationController?.viewControllers.first as! BookingsViewController
+            bookingsVC.createBooking(booking: booking)
+            _ = self.navigationController?.popToRootViewController(animated: true)
+   
+        }
     }
-    
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
     
     // MARK: - UICollectionViewDataSource
-
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -69,10 +81,38 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         if (cell == nil){
             cell = SkillsCollectionViewCell()
         }
-        
+    
+        let skill = sessionModel.skills[indexPath.row]
         cell?.skillNameLabel.preferredMaxLayoutWidth = 50
-        cell?.skillNameLabel.text = sessionModel.skills[indexPath.row]
+        cell?.skillNameLabel.text = skill
+        
+        if(sessionModel.skillsSelected.contains(skill)){
+            cell?.skillNameLabel.textColor = .blue
+        }
+        else{
+            cell?.skillNameLabel.textColor = .lightGray
+        }
         
         return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let skill = sessionModel.skills[indexPath.row]
+        
+        if (sessionModel.skillsSelected.contains(skill)) {
+            sessionModel.remove(object: skill)
+        }
+        else{
+            sessionModel.skillsSelected.append(skill)
+        }
+        
+        collectionView.reloadData()
+    }
+    
+    @IBAction func sliderValueChanged(_ sender: AnyObject) {
+   
+        let value = Int(horizontalSlider.value)
+        pricePerHourLabel.text = "£\(value)"
     }
 }

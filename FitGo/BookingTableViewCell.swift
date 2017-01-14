@@ -14,6 +14,7 @@ class BookingTableViewCell: UITableViewCell {
     @IBOutlet weak var trainerName: UILabel!
     @IBOutlet weak var classDate: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
    
     
     override func awakeFromNib() {

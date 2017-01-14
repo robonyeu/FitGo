@@ -54,7 +54,6 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier: "bookingsSegue", sender: self)
     }
 
-
     
      // MARK: - Navigation
      

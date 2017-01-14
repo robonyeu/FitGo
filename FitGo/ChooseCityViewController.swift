@@ -30,8 +30,13 @@ class ChooseCityViewController: UIViewController, UIPickerViewDelegate,  UIPicke
         
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc: CreateSessionViewController = segue.destination as! CreateSessionViewController
+        vc.location = selectedCity
+    }
+    
     func nextTapped() {
-        
         self.performSegue(withIdentifier: "showCreateSession", sender: nil)
     }
     

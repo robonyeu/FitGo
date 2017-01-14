@@ -8,11 +8,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="bookingCell" rowHeight="69" id="KGk-i7-Jjw" customClass="BookingTableViewCell" customModule="FitGo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="bookingCell" rowHeight="137" id="KGk-i7-Jjw" customClass="BookingTableViewCell" customModule="FitGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="287" height="68"/>
+                <frame key="frameInset" width="286" height="136.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U1m-Kn-kod">
@@ -29,8 +29,7 @@
                         <color key="textColor" red="0.63839577879581144" green="0.63839577879581144" blue="0.63839577879581144" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRK-tb-P24">
-                        <frame key="frameInset" minX="60" minY="37" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRK-tb-P24">
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -40,10 +39,19 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybJ-yy-LwE">
+                        <frame key="frameInset" minX="10" minY="39" width="276" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" red="0.63839577879999998" green="0.63839577879999998" blue="0.63839577879999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="ybJ-yy-LwE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2qF-gb-zAF"/>
+                    <constraint firstItem="eKF-1h-Q1u" firstAttribute="top" secondItem="ybJ-yy-LwE" secondAttribute="bottom" constant="10" id="4Bc-JC-qPX"/>
                     <constraint firstAttribute="trailing" secondItem="hSF-sR-NuK" secondAttribute="trailing" id="5Sp-oQ-Aqy"/>
                     <constraint firstItem="JRK-tb-P24" firstAttribute="top" secondItem="eKF-1h-Q1u" secondAttribute="bottom" constant="5" id="6bp-Hd-MIg"/>
+                    <constraint firstItem="ybJ-yy-LwE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="84y-yu-o5b"/>
                     <constraint firstAttribute="bottom" secondItem="JRK-tb-P24" secondAttribute="bottom" constant="10" id="94k-pe-DmL"/>
                     <constraint firstItem="hSF-sR-NuK" firstAttribute="top" secondItem="eKF-1h-Q1u" secondAttribute="bottom" constant="5" id="B58-cf-kad"/>
                     <constraint firstItem="hSF-sR-NuK" firstAttribute="leading" secondItem="JRK-tb-P24" secondAttribute="trailing" constant="10" id="D5R-bt-Oc8"/>
@@ -56,15 +64,16 @@
                 </constraints>
             </tableViewCellContentView>
             <constraints>
-                <constraint firstItem="U1m-Kn-kod" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="XXB-wx-Y9s"/>
+                <constraint firstItem="U1m-Kn-kod" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" constant="20" id="XXB-wx-Y9s"/>
             </constraints>
             <connections>
                 <outlet property="classDate" destination="hSF-sR-NuK" id="jUR-Ti-MsH"/>
+                <outlet property="locationLabel" destination="ybJ-yy-LwE" id="PT4-VP-bYs"/>
                 <outlet property="statusLabel" destination="JRK-tb-P24" id="31O-tM-Fg5"/>
                 <outlet property="trainerImageView" destination="U1m-Kn-kod" id="4fJ-Nw-afu"/>
                 <outlet property="trainerName" destination="eKF-1h-Q1u" id="TVD-ju-kam"/>
             </connections>
-            <point key="canvasLocation" x="34" y="66.5"/>
+            <point key="canvasLocation" x="34" y="56.5"/>
         </tableViewCell>
     </objects>
 </document>

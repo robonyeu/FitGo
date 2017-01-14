@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SkillsCollectionViewCell" customModule="FitGo" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="skillsCell" id="gTV-IL-0wX" customClass="SkillsCollectionViewCell" customModule="FitGo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -26,8 +26,13 @@
                 <constraint firstItem="Hql-TE-yax" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="2pu-qK-d2P"/>
                 <constraint firstItem="Hql-TE-yax" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Qpv-gS-uHd"/>
                 <constraint firstAttribute="trailing" secondItem="Hql-TE-yax" secondAttribute="trailing" constant="10" id="aqi-JD-XbS"/>
+                <constraint firstItem="Hql-TE-yax" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="c0f-QE-qul"/>
+                <constraint firstAttribute="bottom" secondItem="Hql-TE-yax" secondAttribute="bottom" constant="5" id="sbd-s5-1R7"/>
             </constraints>
             <size key="customSize" width="75" height="30"/>
+            <connections>
+                <outlet property="skillNameLabel" destination="Hql-TE-yax" id="Bqo-04-JMD"/>
+            </connections>
             <point key="canvasLocation" x="46.5" y="44"/>
         </collectionViewCell>
     </objects>

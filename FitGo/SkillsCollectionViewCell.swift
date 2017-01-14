@@ -10,6 +10,8 @@ import UIKit
 
 class SkillsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var skillNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

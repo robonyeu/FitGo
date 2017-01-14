@@ -8,17 +8,28 @@
 
 import UIKit
 
-class CreateSessionViewController: UIViewController {
+class CreateSessionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var skillsCollectionView: UICollectionView!
+    var sessionModel: CreateSessionViewModel = CreateSessionViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let mainScreenSize: CGSize = UIScreen.main.bounds.size
-        let scrollableSize: CGSize = scrollView.contentSize
-        scrollView.contentSize = CGSize(width: mainScreenSize.width, height: scrollableSize.height)
+        registerCells()
     }
 
+    func registerCells(){
+        
+        let nib: UINib = UINib(nibName: "SkillsCollectionViewCell", bundle: nil)
+        skillsCollectionView.register(nib, forCellWithReuseIdentifier: "skillsCell")
+        
+        let size: CGSize = CGSize(width: 1, height: 1)
+        
+        if let flowLayout = skillsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout { flowLayout.estimatedItemSize = size }
+        
+        }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -40,5 +51,28 @@ class CreateSessionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     
+    // MARK: - UICollectionViewDataSource
 
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return sessionModel.skills.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "skillsCell", for: indexPath) as? SkillsCollectionViewCell
+        
+        if (cell == nil){
+            cell = SkillsCollectionViewCell()
+        }
+        
+        cell?.skillNameLabel.preferredMaxLayoutWidth = 50
+        cell?.skillNameLabel.text = sessionModel.skills[indexPath.row]
+        
+        return cell!
+    }
 }

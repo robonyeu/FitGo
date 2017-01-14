@@ -214,7 +214,7 @@
                                     <action selector="confirmTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="5ge-hC-xCD"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-hn-adp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-hn-adp">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What things interest you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="355" translatesAutoresizingMaskIntoConstraints="NO" id="Lwu-r2-dgC">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -224,9 +224,9 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gNc-jc-5M5">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="2aT-gK-X5B"/>
+                                            <constraint firstAttribute="height" constant="60" id="2aT-gK-X5B"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cm9-b3-U8r">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cm9-b3-U8r">
                                             <size key="itemSize" width="50" height="50"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -234,7 +234,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8be-ng-UAz">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="5" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -242,6 +242,10 @@
                                                 </view>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="fMk-cn-GEp" id="yND-vd-fZq"/>
+                                            <outlet property="delegate" destination="fMk-cn-GEp" id="J3I-sE-H8I"/>
+                                        </connections>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much are you willing to pay?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiO-Kr-63w">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -387,11 +391,12 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="KS3-hn-adp" id="RIc-Q1-iBC"/>
+                        <outlet property="skillsCollectionView" destination="gNc-jc-5M5" id="Mei-WS-cac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHY-zh-hL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093.5999999999999" y="0.44977511244377816"/>
+            <point key="canvasLocation" x="1124" y="143"/>
         </scene>
         <!--List Trainers View Controller-->
         <scene sceneID="CvB-cm-dR9">

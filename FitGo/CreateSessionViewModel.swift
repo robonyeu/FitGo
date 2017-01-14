@@ -10,5 +10,5 @@ import UIKit
 
 class CreateSessionViewModel: NSObject {
 
-    let skills : NSArray = ["Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit"]
+    let skills:  Array = ["Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit", "Boxing", "Yoga", "Loose weight", "Spinning", "Crossfit"]
 }

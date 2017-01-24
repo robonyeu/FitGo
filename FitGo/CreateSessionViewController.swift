@@ -10,6 +10,8 @@ import UIKit
 
 class CreateSessionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
+    
+    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var horizontalSlider: UISlider!
     @IBOutlet weak var pricePerHourLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -17,10 +19,14 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
     
     var location: String = ""
     var sessionModel: CreateSessionViewModel = CreateSessionViewModel()
-    
+    var picker : UIDatePicker = UIDatePicker()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+        
+        dateTextField.inputAccessoryView = createToolBar()
+        dateTextField.inputView = createDatePicker()
     }
 
     func registerCells(){
@@ -115,4 +121,42 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         let value = Int(horizontalSlider.value)
         pricePerHourLabel.text = "£\(value)"
     }
+    
+  
+    func donePicker()  {
+        print(picker.date)
+        
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd HH:mm"
+        let dateString = formatter.string(from: picker.date)
+        dateTextField.text = dateString
+        
+        dateTextField.resignFirstResponder()
+    }
+    
+    func createToolBar() -> UIToolbar {
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = .black//UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(CreateSessionViewController.donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        
+        toolBar.setItems([spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        return toolBar
+    }
+    
+    func createDatePicker() -> UIView {
+
+        picker.datePickerMode = UIDatePickerMode.dateAndTime
+        picker.backgroundColor = .white
+        picker.minimumDate = Date()
+    
+        return picker
+    }
+   
 }

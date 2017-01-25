@@ -291,6 +291,9 @@
                                             <constraint firstAttribute="height" constant="30" id="blO-Z8-Oqy"/>
                                         </constraints>
                                         <state key="normal" title="Once"/>
+                                        <connections>
+                                            <action selector="onceButtonTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="L7p-t0-Tlq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MK-ws-diu">
                                         <rect key="frame" x="65" y="291.5" width="45" height="30"/>
@@ -299,6 +302,9 @@
                                             <constraint firstAttribute="height" constant="30" id="kU5-Jy-C5p"/>
                                         </constraints>
                                         <state key="normal" title="2-3"/>
+                                        <connections>
+                                            <action selector="twothreeButtonTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="NVH-iG-E5k"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg1-EE-uPi">
                                         <rect key="frame" x="120" y="291.5" width="45" height="30"/>
@@ -307,6 +313,9 @@
                                             <constraint firstAttribute="height" constant="30" id="cYl-03-6Fw"/>
                                         </constraints>
                                         <state key="normal" title="4-5+"/>
+                                        <connections>
+                                            <action selector="fourormoreButtonTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="lf9-f7-rii"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to work out?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-x2-vEX">
                                         <rect key="frame" x="10" y="346.5" width="355" height="20.5"/>
@@ -321,6 +330,9 @@
                                             <constraint firstAttribute="height" constant="30" id="uHk-PI-myT"/>
                                         </constraints>
                                         <state key="normal" title="Indoor"/>
+                                        <connections>
+                                            <action selector="indoorButtonTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="dJH-iB-1wL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfX-RB-NQf">
                                         <rect key="frame" x="95" y="377" width="75" height="30"/>
@@ -329,6 +341,9 @@
                                             <constraint firstAttribute="height" constant="30" id="tda-rl-oUc"/>
                                         </constraints>
                                         <state key="normal" title="Outdoor"/>
+                                        <connections>
+                                            <action selector="outdoorButtonTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="J9M-Gn-2xg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G38-Gr-c1N">
                                         <rect key="frame" x="180" y="377" width="75" height="30"/>
@@ -337,6 +352,9 @@
                                             <constraint firstAttribute="height" constant="30" id="bC0-8A-mgO"/>
                                         </constraints>
                                         <state key="normal" title="Don't mind"/>
+                                        <connections>
+                                            <action selector="dontmindButtonTapped:" destination="fMk-cn-GEp" eventType="touchUpInside" id="ePR-mR-vS7"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you mind being trained with more people?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi1-y9-0ad">
                                         <rect key="frame" x="10" y="432" width="355" height="41"/>
@@ -442,10 +460,16 @@
                     </view>
                     <connections>
                         <outlet property="dateTextField" destination="V8K-02-qgd" id="2YO-uz-wF2"/>
+                        <outlet property="dontmindButton" destination="G38-Gr-c1N" id="lwK-rZ-cBO"/>
+                        <outlet property="fourFiveButton" destination="tg1-EE-uPi" id="mmg-Hp-RLc"/>
                         <outlet property="horizontalSlider" destination="YMJ-3p-3s8" id="kNO-Be-3Vt"/>
+                        <outlet property="indoorButton" destination="QQi-Jm-5Es" id="9ct-mV-NJ0"/>
+                        <outlet property="onceButton" destination="3l2-Qm-lFr" id="Rsp-k2-Z43"/>
+                        <outlet property="outdoorButton" destination="JfX-RB-NQf" id="tiz-jG-stm"/>
                         <outlet property="pricePerHourLabel" destination="mYq-Rb-mml" id="zs0-UE-xpt"/>
                         <outlet property="scrollView" destination="KS3-hn-adp" id="RIc-Q1-iBC"/>
                         <outlet property="skillsCollectionView" destination="gNc-jc-5M5" id="Mei-WS-cac"/>
+                        <outlet property="twoThreeButton" destination="5MK-ws-diu" id="y1v-tP-v7b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHY-zh-hL2" userLabel="First Responder" sceneMemberID="firstResponder"/>

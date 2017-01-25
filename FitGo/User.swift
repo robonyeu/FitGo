@@ -18,26 +18,29 @@ import UIKit
 
 class User: NSObject {
 
-    let name, surname : String
+    let name, lastname, birthday : String
+    var email: String
+    var phoneNumber: Int
+    var bookings: Array<Booking> = []
     
-    init(userName: String, userSurname: String) {
+    init(userName: String, lastname: String, birthday: String, email: String, phoneNumber: Int) {
         self.name = userName;
-        self.surname = userSurname
+        self.lastname = lastname
+        self.birthday = birthday
+        self.email = email
+        self.phoneNumber = phoneNumber
     }
-    
-   
-    /*
-    convenience init(userName: String, userSurname: String, actualCity: Cities){
-        
-        self.init(userName: userName)
-    //    name = userName
-            //  surname
-    }
-    */
     
     func user () -> User{
         return self
     }
     
+}
+
+extension User{
+    
+    func fullName() -> String {
+        return name + " " + lastname
+    }
     
 }

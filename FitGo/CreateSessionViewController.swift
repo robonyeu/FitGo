@@ -9,22 +9,31 @@
 import UIKit
 
 class CreateSessionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
-
     
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var horizontalSlider: UISlider!
     @IBOutlet weak var pricePerHourLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var skillsCollectionView: UICollectionView!
+    @IBOutlet weak var onceButton: UIButton!
+    @IBOutlet weak var twoThreeButton: UIButton!
+    @IBOutlet weak var fourFiveButton: UIButton!
+    @IBOutlet weak var indoorButton: UIButton!
+    @IBOutlet weak var outdoorButton: UIButton!
+    @IBOutlet weak var dontmindButton: UIButton!
     
     var location: String = ""
     var sessionModel: CreateSessionViewModel = CreateSessionViewModel()
     var picker : UIDatePicker = UIDatePicker()
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerCells()
         
+        self.onceButton.isSelected = true
+        self.indoorButton.isSelected = true
+        
+        registerCells()
         dateTextField.inputAccessoryView = createToolBar()
         dateTextField.inputView = createDatePicker()
     }
@@ -35,7 +44,6 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         skillsCollectionView.register(nib, forCellWithReuseIdentifier: "skillsCell")
         
         let size: CGSize = CGSize(width: 1, height: 1)
-        
         if let flowLayout = skillsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout { flowLayout.estimatedItemSize = size }
     }
     
@@ -51,17 +59,15 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
             alert.addAction(cancel)
             
             self.present(alert, animated: true, completion: nil)
-            
         }
         else{
             let value = Int(horizontalSlider.value)
-            
-            let booking: Booking = Booking(id: 1, pt_id: 2, user_id: 3, price: value, location: "London", skills: sessionModel.skillsSelected, state: "Pendent")
+            let booking: Booking = Booking(id: 1, pt_id: 2, user_id: 3, price: value, location: location, skills: sessionModel.skillsSelected, state: "Pendent", date: picker.date, trainTimesAWeek: sessionModel.timesAWeek, placeToWorkout: sessionModel.placeToWorkOut)
             
             let bookingsVC : BookingsViewController = self.navigationController?.viewControllers.first as! BookingsViewController
             bookingsVC.createBooking(booking: booking)
+            
             _ = self.navigationController?.popToRootViewController(animated: true)
-   
         }
     }
     
@@ -121,10 +127,8 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         let value = Int(horizontalSlider.value)
         pricePerHourLabel.text = "£\(value)"
     }
-    
   
     func donePicker()  {
-        print(picker.date)
         
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = "YYYY-MM-dd HH:mm"
@@ -138,7 +142,7 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
-        toolBar.tintColor = .black//UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
+        toolBar.tintColor = .black
         toolBar.sizeToFit()
         
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(CreateSessionViewController.donePicker))
@@ -159,4 +163,52 @@ class CreateSessionViewController: UIViewController, UICollectionViewDataSource,
         return picker
     }
    
+    func selectTimesWeekButton(button: UIButton) {
+    
+        self.onceButton.isSelected = false
+        self.twoThreeButton.isSelected = false
+        self.fourFiveButton.isSelected = false
+
+        button.isSelected = true
+    }
+    
+    func selectPlacesWorkoutButton(button: UIButton) {
+        
+        self.indoorButton.isSelected = false
+        self.outdoorButton.isSelected = false
+        self.dontmindButton.isSelected = false
+        
+        button.isSelected = true
+    }
+
+    
+    @IBAction func onceButtonTapped(_ sender: Any) {
+        sessionModel.timesAWeek = (self.onceButton.titleLabel?.text)!
+        selectTimesWeekButton(button: self.onceButton)
+    }
+    @IBAction func twothreeButtonTapped(_ sender: Any) {
+        sessionModel.timesAWeek = (self.twoThreeButton.titleLabel?.text)!
+        selectTimesWeekButton(button: self.twoThreeButton)
+    }
+    
+    @IBAction func fourormoreButtonTapped(_ sender: Any) {
+        sessionModel.timesAWeek = (self.fourFiveButton.titleLabel?.text)!
+        selectTimesWeekButton(button: self.fourFiveButton)
+    }
+    
+    @IBAction func indoorButtonTapped(_ sender: Any) {
+        sessionModel.placeToWorkOut = (self.indoorButton.titleLabel?.text)!
+        selectPlacesWorkoutButton(button: self.indoorButton)
+    }
+    
+    @IBAction func outdoorButtonTapped(_ sender: Any) {
+        sessionModel.placeToWorkOut = (self.outdoorButton.titleLabel?.text)!
+        selectPlacesWorkoutButton(button: self.outdoorButton)
+    }
+    
+    @IBAction func dontmindButtonTapped(_ sender: Any) {
+        sessionModel.placeToWorkOut = (self.dontmindButton.titleLabel?.text)!
+        selectPlacesWorkoutButton(button: self.dontmindButton)
+    }
+    
 }

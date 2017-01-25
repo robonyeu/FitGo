@@ -50,7 +50,6 @@ class LoginViewController: UIViewController {
     
     func getUser(){
         // do server connection
-        
         self.performSegue(withIdentifier: "bookingsSegue", sender: self)
     }
 

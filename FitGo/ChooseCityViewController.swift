@@ -23,13 +23,9 @@ class ChooseCityViewController: UIViewController, UIPickerViewDelegate,  UIPicke
         }
         
         self.navigationItem.title = "Fitness on the Go"
-        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
-        
         self.cityTextField.inputView = self.createPicker()
-        
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc: CreateSessionViewController = segue.destination as! CreateSessionViewController
@@ -41,12 +37,10 @@ class ChooseCityViewController: UIViewController, UIPickerViewDelegate,  UIPicke
     }
     
     func createPicker() -> UIPickerView {
-        
         let picker : UIPickerView = UIPickerView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 280))
         picker.delegate = self;
         return picker
     }
-    
     
     // MARK: Picker Delegate
     
@@ -66,7 +60,7 @@ class ChooseCityViewController: UIViewController, UIPickerViewDelegate,  UIPicke
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let all: Array<String> = cities.allCities()
         self.cityTextField.text = all[row].uppercased()
+        selectedCity = all[row].uppercased()
     }
-    
     
 }

@@ -17,9 +17,12 @@ class Booking{
     var location: String = ""
     var skills: Array<String> = Array<String>()
     var state: String = ""
+    var date: Date = Date()
+    var trainTimesAWeek: String = ""
+    var placeToWorkout: String = ""
     
     
-    init(id: Int, pt_id: Int, user_id: Int, price: Int, location: String, skills: Array<String>, state: String){
+    init(id: Int, pt_id: Int, user_id: Int, price: Int, location: String, skills: Array<String>, state: String, date: Date, trainTimesAWeek: String, placeToWorkout: String){
         self.id = id
         self.pt_id = pt_id
         self.user_id = user_id
@@ -27,6 +30,9 @@ class Booking{
         self.location = location
         self.skills = skills
         self.state = state
+        self.date = date
+        self.trainTimesAWeek = trainTimesAWeek
+        self.placeToWorkout = placeToWorkout
     }
     
 }

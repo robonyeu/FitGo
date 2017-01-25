@@ -11,7 +11,6 @@ import UIKit
 class BookingsViewController: UIViewController, UITableViewDataSource {
 
     var activeBookings: Array<Booking> = Array<Booking>()
-    //typealias booking = (String, String)
     
     @IBOutlet weak var bookingsTableView: UITableView!
     
@@ -20,12 +19,10 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
         
         self.setupTableView()
         self.getActiveBookings()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setupTableView(){
@@ -50,9 +47,11 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
         if activeBookings.count != 0 {
             return self.activeBookings.count
         }
+        
         return 0
     }
     
@@ -68,33 +67,23 @@ class BookingsViewController: UIViewController, UITableViewDataSource {
         
         cell?.statusLabel.text = booking.state
         cell?.locationLabel.text = booking.location
-        /*if abook as Dictionary {
-            cell?.trainerName.text = abook[1]
-        }*/
+        
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "HH:mm dd/MM/YYYY"
+        
+        cell?.classDate.text = formatter.string(from: booking.date)
         
         return cell!
     }
-    
     
     public func createBooking(booking: Booking){
         
         activeBookings.append(booking)
 
-        
         if activeBookings.count != 0 {
             self.bookingsTableView.isHidden = false
             self.bookingsTableView.reloadData()
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
